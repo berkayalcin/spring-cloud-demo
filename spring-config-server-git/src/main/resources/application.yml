@@ -1,0 +1,15 @@
+---
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/berkayalcin/spring-boot-cloudconfig-demo
+          search-paths:
+            - 'station*'
+  security:
+    user:
+      name: pluralsight
+      password: pluralsight
